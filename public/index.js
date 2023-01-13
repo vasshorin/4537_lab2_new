@@ -6,7 +6,7 @@ $(document).ready(function () {
       $.ajax({
         type: 'POST',
         //url: 'http://localhost:3000/chatbot',
-        url: 'https://four537-lab2-again.onrender.com/chatbot',
+        url: 'https://four537-lab.onrender.com/chatbot',
         data: { message: message },
         success: function (response) {
           let newMessage = $('<div>', { class: 'message' }).text(response.text);
